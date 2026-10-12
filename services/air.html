@@ -9,6 +9,7 @@
 <link rel="canonical" href="https://megatonexport.ru/aviaperevozki/">
 <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
 <header class="header">
     <div class="container header__inner">
@@ -43,20 +44,27 @@
                 <a href="tel:+79851242554">+7 985 124-25-54</a>
             </div>
         </nav>
+        <div class="language-control">
+            <button class="language-button" type="button" aria-haspopup="dialog" aria-expanded="false" aria-label="Выбрать язык сайта">
+                <span class="language-globe" aria-hidden="true">◎</span>
+                <span class="language-current">RU</span>
+                <span class="language-chevron" aria-hidden="true">⌄</span>
+            </button>
+        </div>
         <div class="header__contacts">
             <a href="tel:+79629684444">+7 962 968-44-44</a>
             <a href="tel:+79851242554">+7 985 124-25-54</a>
         </div>
     </div>
 </header>
-<main>
 
+<main>
 <section class="section inner-hero">
     <div class="container">
         <div class="section-topline">
             <span class="eyebrow">
-                <b>ME</b>
-                 / Мегатон Экспорт
+                <b>ME</b> 
+                / Мегатон Экспорт
             </span>
             <span class="section-topline__note">Международная логистика</span>
         </div>
@@ -86,11 +94,8 @@
             <a href="outsourcing.html">Аутсорсинг</a>
             <a href="partners.html">Партнёры</a>
             <a href="contacts.html">Контакты</a>
-            <a class="inner-sidebar__phone" href="tel:+79629684444">+7 962 968-44-44 ↗</a>
-            <a class="inner-sidebar__phone" href="tel:+79629684444">+7 985 124-25-54 ↗</a>
         </aside>
-        <article class="inner-article">
-            <h2>Авиаперевозки</h2>
+        <article class="inner-article"><h2>Авиаперевозки</h2>
             <p>Воздушный транспорт позволяет организовать доставку грузов в случаях, когда важны сроки и требуется международное сообщение.</p>
 
             <p>«Мегатон Экспорт» организует авиаперевозки с учётом характеристик груза, маршрута и требований к перевозке.</p>
@@ -114,18 +119,17 @@
     </div>
 </section>
 
-<section class="contact-section inner-cta">
+<section class="contact-section" id="contacts">
     <div class="container contact-layout">
         <div class="contact-main">
             <p class="eyebrow">
-                <b>ME</b>
-                 / Свяжитесь с нами
+                <b>04</b>
+                Свяжитесь с нами
             </p>
-            <h2>Есть задача?<br>
-                <span>Найдём решение.</span>
-            </h2>
-            <p>Расскажите о грузе и маршруте — обсудим возможные варианты перевозки.</p>
-            <a href="contacts.html" class="button button--light">Обсудить перевозку 
+            <h2>Есть задача?
+                <br><span>Найдём решение.</span>
+            </h2><p>Расскажите о вашем грузе и маршруте — обсудим возможные варианты перевозки.</p>
+            <a href="services/contacts.html" class="button button--light">Обсудить перевозку 
                 <b>↗</b>
             </a>
         </div>
@@ -135,7 +139,7 @@
             <a href="tel:+79851242554">+7 985 124-25-54</a>
             <div class="contact-details__bottom">
                 <span>MEGATON EXPORT</span>
-                <a href="contacts.html">Все контакты ↗</a>
+                <a href="services/contacts.html">Все контакты ↗</a>
             </div>
         </div>
         <div class="contact-watermark">ME</div>
@@ -145,17 +149,44 @@
 
 <footer class="footer">
     <div class="container footer__inner">
-        <a href="index.html" class="footer__brand">MEGATON
-            <span>.</span>
-            EXPORT
-        </a>
+        <a href="index.html" class="footer__brand">MEGATON<span>.</span>EXPORT</a>
         <p>Международные грузоперевозки</p>
         <a href="services/contacts.html" class="footer__contact">Контакты ↗</a>
         <small>© Мегатон Экспорт. Все права защищены.</small>
     </div>
 </footer>
 
-<script src="../js/script.js"></script>
+<div class="language-backdrop" id="language-dialog" hidden>
+    <section class="language-dialog" role="dialog" aria-modal="true" aria-labelledby="language-title">
+        <button class="language-close" type="button" aria-label="Закрыть выбор языка">×</button>
+        <p class="language-kicker">MEGATON EXPORT / LANGUAGE</p>
+        <h2 id="language-title">Выберите язык</h2>
+        <div class="language-options">
+
+            <button type="button" class="language-option" data-language="ru">
+                <span class="language-code">RU</span>
+                <span class="language-name">Русский</span>
+                <span class="language-check">✓</span>
+            </button>
+
+            <button type="button" class="language-option" data-language="en">
+                <span class="language-code">EN</span>
+                <span class="language-name">English</span>
+                <span class="language-check">✓</span>
+            </button>
+
+            <button type="button" class="language-option" data-language="zh">
+                <span class="language-code">中文</span>
+                <span class="language-name">简体中文</span>
+                <span class="language-check">✓</span>
+            </button>
+            
+        </div>
+        <p class="language-note">Megaton Export · International Logistics</p>
+    </section>
+</div>
+
+<script src="js/script.js"></script>
 
 </body>
 </html>
