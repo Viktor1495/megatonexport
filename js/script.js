@@ -1,4 +1,12 @@
-document.addEventListener("DOMContentLoaded", () => {
+const megatonReady = callback => {
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", callback, { once: true });
+  } else {
+    callback();
+  }
+};
+
+megatonReady(() => {
   const menuButton = document.querySelector(".menu-toggle");
   const navigation = document.querySelector("#main-navigation");
   const dropdown = document.querySelector(".nav-dropdown");
@@ -178,4 +186,44 @@ function initMegatonLanguages() {
   options.forEach(button => button.addEventListener('click', () => { applyLanguage(button.dataset.language); closeDialog(); }));
   applyLanguage(lang);
 }
-document.addEventListener('DOMContentLoaded', initMegatonLanguages);
+megatonReady(initMegatonLanguages);
+
+
+// Highlight the navigation item that matches the page currently being viewed.
+megatonReady(() => {
+  const navigation = document.querySelector('#main-navigation');
+  if (!navigation) return;
+
+  const normalizePath = pathname => {
+    let path = decodeURIComponent(pathname || '/').replace(/\\/g, '/');
+    path = path.replace(/\/{2,}/g, '/');
+    if (path.endsWith('/index.html')) path = path.slice(0, -'index.html'.length);
+    if (!path.endsWith('/')) path += '/';
+    return path;
+  };
+
+  const currentPath = normalizePath(window.location.pathname);
+  const links = navigation.querySelectorAll('a[href]');
+  links.forEach(link => {
+    link.classList.remove('is-current');
+    link.removeAttribute('aria-current');
+
+    const rawHref = link.getAttribute('href');
+    if (!rawHref || rawHref.startsWith('#') || rawHref.startsWith('tel:') || rawHref.startsWith('mailto:')) return;
+
+    let target;
+    try { target = new URL(rawHref, window.location.href); } catch (_) { return; }
+    if (target.origin !== window.location.origin || target.hash && normalizePath(target.pathname) === currentPath) return;
+
+    if (normalizePath(target.pathname) === currentPath) {
+      link.classList.add('is-current');
+      link.setAttribute('aria-current', 'page');
+    }
+  });
+
+  // Also mark the Services trigger when the current page is one of its submenu pages.
+  const dropdown = navigation.querySelector('.nav-dropdown');
+  if (dropdown?.querySelector('.dropdown-menu a.is-current')) {
+    dropdown.querySelector('.dropdown-link')?.classList.add('is-current');
+  }
+});
