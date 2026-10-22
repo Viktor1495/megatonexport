@@ -773,3 +773,24 @@ body.language-modal-open{overflow:hidden}
   .inner-hero h1 { font-size: clamp(36px, 10vw, 46px); line-height: 1.02; }
   .inner-hero__intro { font-size: 16px; }
 }
+
+/* Меняем местами переключатель языка и бургер-меню на мобильных */
+@media (max-width: 800px) {
+  .header__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  .header__inner > .logo {
+    order: 1;
+  }
+
+  .header__inner > .language-control {
+    order: 2;
+    margin-left: auto;
+  }
+
+  .header__inner > .menu-toggle {
+    order: 3;
+    margin-left: 12px;
+  }
