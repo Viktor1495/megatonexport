@@ -760,14 +760,14 @@ body.language-modal-open{overflow:hidden}
 @media (max-width: 800px) {
   .inner-hero {
     min-height: 390px;
-    padding: 112px 0 28px;
+    padding: 42px 0 28px;
     background-position: center, center, 58% center;
   }
   .inner-hero .section-topline { margin-bottom: 38px; }
   .inner-hero__meta { margin-top: 36px; }
 }
 @media (max-width: 480px) {
-  .inner-hero { min-height: 360px; padding-top: 100px; }
+  .inner-hero { min-height: 360px; padding-top: 10px; }
   .inner-hero .section-topline { gap: 12px; margin-bottom: 34px; }
   .inner-hero .section-topline__note { max-width: 125px; text-align: right; }
   .inner-hero h1 { font-size: clamp(36px, 10vw, 46px); line-height: 1.02; }
