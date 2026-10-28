@@ -227,4 +227,6 @@ megatonReady(() => {
     dropdown.querySelector('.dropdown-link')?.classList.add('is-current');
   }
 });
+
+document.getElementById('current-year').textContent = new Date().getFullYear();
  
