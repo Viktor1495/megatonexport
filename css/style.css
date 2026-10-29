@@ -342,7 +342,7 @@ img{
 
 .hero__side-note{
   position:absolute;
-  right:-37px;
+  right:-19px;
   top:50%;
   transform:translate(100%,-50%) rotate(90deg);
   transform-origin:left center;
@@ -1108,9 +1108,9 @@ img{
   .hero h1{margin:24px 0;font-size:clamp(52px,11vw,82px)}
   .hero__bottom{flex-direction:row;align-items:flex-end;justify-content:space-between}
   .hero__text{max-width:310px}
-  .hero__visual{width:min(78%,480px);justify-self:end;margin-right:12px}
+  .hero__visual{width:min(78%,480px);justify-self:end;margin-right:150px}
   .hero__image-wrap{height:clamp(270px,58vw,390px)}
-  .hero__side-note{right:-15px}
+  .hero__side-note{right:-20px}
   .hero__meta{margin-top:32px;flex-wrap:wrap;gap:12px;font-size:8px}
   .hero__meta a{order:3;width:100%}
   .hero__index{display:none}
@@ -1139,9 +1139,9 @@ img{
   .hero__text{max-width:100%}
   .hero__buttons{width:100%;flex-direction:column;align-items:flex-start}
   .hero__buttons .button{width:100%}
-  .hero__visual{width:88%;margin-right:10px}
+  .hero__visual{width:88%;margin-right:25px}
   .hero__image-wrap{height:300px}
-  .hero__side-note{right:-11px;font-size:8px}
+  .hero__side-note{right:-17px;font-size:8px}
   .hero__meta{align-items:flex-start}
   .hero__meta>span:last-child{display:none}
   .section{padding:65px 0}
