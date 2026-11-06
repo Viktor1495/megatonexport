@@ -1419,3 +1419,193 @@ body.language-modal-open{overflow:hidden}
     margin-left: 12px;
   }
 }
+
+/* ==========================================
+   CONTACT DETAILS — TWO COLUMNS
+========================================== */
+
+.contact-details {
+    width: 100%;
+    min-width: 0;
+    align-self: center;
+}
+
+/* Две основные колонки */
+
+.contact-details__columns {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 30px;
+    align-items: start;
+}
+
+.contact-details__column {
+    min-width: 0;
+}
+
+.contact-details__column--company {
+    padding-left: 26px;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Контактные группы */
+
+.contact-details__group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 9px;
+}
+
+.contact-details__column--contacts .contact-details__group + .contact-details__group {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-details__label {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+
+.contact-details__group > a {
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.45;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.contact-details__group > a:hover {
+    color: #70b5ff;
+}
+
+/* Название организации */
+
+.contact-details__company-name {
+    margin: 9px 0 17px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.45;
+}
+
+/* Реквизиты */
+
+.contact-details__requisites {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px 16px;
+    width: 100%;
+}
+
+.contact-details__requisite {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 0;
+}
+
+.contact-details__requisite--ogrn {
+    grid-column: 1 / -1;
+}
+
+.contact-details__requisite span {
+    color: rgba(255, 255, 255, 0.58);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+}
+
+.contact-details__requisite strong {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    overflow-wrap: anywhere;
+}
+
+/* Юридический адрес */
+
+.contact-details__address {
+    margin: 18px 0 0;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 12px;
+    line-height: 1.65;
+}
+
+/* Нижняя строка */
+
+.contact-details__bottom {
+    margin-top: 24px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .contact-details__columns {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    .contact-details__column--company {
+        padding-left: 18px;
+    }
+
+    .contact-details__group > a {
+        font-size: 13px;
+    }
+
+    .contact-details__company-name {
+        font-size: 14px;
+    }
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+    .contact-details__columns {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .contact-details__column--company {
+        padding: 20px 0 0;
+        border-left: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .contact-details__column--contacts .contact-details__group + .contact-details__group {
+        margin-top: 18px;
+        padding-top: 16px;
+    }
+
+    .contact-details__group > a {
+        font-size: 14px;
+    }
+
+    .contact-details__company-name {
+        font-size: 14px;
+    }
+
+    .contact-details__requisites {
+        gap: 12px 14px;
+    }
+
+    .contact-details__address {
+        margin-top: 14px;
+    }
+
+    .contact-details__bottom {
+        margin-top: 20px;
+    }
+}
