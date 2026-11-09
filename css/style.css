@@ -697,6 +697,7 @@ img{
   flex-direction:column;
   align-items:flex-start;
   gap:10px;
+  margin-left: 0;
   padding-bottom:4px;
 }
 
