@@ -646,7 +646,7 @@ img{
   position:relative;
   display:grid;
   grid-template-columns:1.15fr .85fr;
-  gap:8%;
+  gap:1%;
   align-items:end;
 }
 
