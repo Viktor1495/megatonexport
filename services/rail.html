@@ -74,13 +74,63 @@
         </div>
         <div class="service-quote-hero">
             <div class="service-quote-hero__copy">
-        <p class="inner-hero__eyebrow">Перевозки по железной дороге</p>
-        <h1>Железнодорожные перевозки</h1>
-        <p class="inner-hero__intro">Планирование железнодорожной доставки с учётом направления, характеристик груза и сроков.</p>
-        
+                <p class="inner-hero__eyebrow">Перевозки по железной дороге</p>
+                <h1>Железнодорожные перевозки</h1>
+                <p class="inner-hero__intro">Планирование железнодорожной доставки с учётом направления, характеристик груза и сроков.</p>
                 <a class="service-quote-hero__button" href="#quote-form-rail">Запросить расчёт</a>
             </div>
-            <aside class="service-quote" id="quote-form-rail" aria-label="Форма заявки: Железнодорожная перевозка"><div class="service-quote__head"><p class="service-quote__eyebrow">ЗАПРОС НА ПЕРЕВОЗКУ</p><h2>Запросить расчёт</h2><p>Укажите известные данные. Остальное уточним при обсуждении.</p></div><form class="service-quote__form" data-service-quote="rail"><div class="service-quote__grid"><label class="service-quote__field"><span>Откуда отправляем</span><input name="rail_0" type="text" placeholder="Город / станция / терминал отправления" autocomplete="off"></label><label class="service-quote__field"><span>Куда доставляем</span><input name="rail_1" type="text" placeholder="Город / станция / терминал назначения" autocomplete="off"></label><label class="service-quote__field"><span>Тип отправки</span><input name="rail_2" type="text" placeholder="Контейнер / вагон / сборный груз / пока не знаю" autocomplete="off"></label><label class="service-quote__field"><span>Количество и параметры</span><input name="rail_3" type="text" placeholder="Количество контейнеров/мест, тип контейнера, вес и объём" autocomplete="off"></label><label class="service-quote__field"><span>Что перевозим</span><input name="rail_4" type="text" placeholder="Наименование, упаковка, количество мест" autocomplete="off"></label><label class="service-quote__field"><span>Дата готовности</span><input name="rail_5" type="text" placeholder="Ориентировочные сроки или желаемая дата" autocomplete="off"></label><label class="service-quote__field"><span>Дополнительные условия</span><input name="rail_6" type="text" placeholder="Требования к погрузке, терминалам или перегрузке" autocomplete="off"></label><label class="service-quote__field service-quote__field--wide"><span>Как с вами связаться</span><input name="contact" type="text" placeholder="Телефон или email" required autocomplete="tel"></label><label class="service-quote__field service-quote__field--wide"><span>Дополнительные сведения (необязательно)</span><textarea name="extra" rows="3" placeholder="Особые требования, документы, вопросы"></textarea></label></div><label class="service-quote__consent"><input type="checkbox" name="consent" required><span>Согласен(на) на обработку персональных данных. Политика конфиденциальности</span></label><button class="button button--primary service-quote__submit" type="submit">Отправить запрос</button><p class="service-quote__notice" aria-live="polite">Отправка заявки будет подключена на следующем этапе.</p></form></aside>
+            <aside class="service-quote" id="quote-form-rail" aria-label="Форма заявки: Железнодорожная перевозка">
+                <div class="service-quote__head">
+                    <p class="service-quote__eyebrow">ЗАПРОС НА ПЕРЕВОЗКУ</p>
+                    <h2>Запросить расчёт</h2>
+                    <p>Укажите известные данные. Остальное уточним при обсуждении.</p>
+                </div>
+                <form class="service-quote__form" data-service-quote="rail">
+                    <div class="service-quote__grid">
+                        <label class="service-quote__field">
+                            <span>Откуда отправляем</span>
+                            <input name="rail_0" type="text" placeholder="Город / станция / терминал отправления" autocomplete="off">
+                        </label>
+                        <label class="service-quote__field">
+                            <span>Куда доставляем</span>
+                            <input name="rail_1" type="text" placeholder="Город / станция / терминал назначения" autocomplete="off">
+                        </label>
+                        <label class="service-quote__field">
+                            <span>Тип отправки</span>
+                            <input name="rail_2" type="text" placeholder="Контейнер / вагон / сборный груз / пока не знаю" autocomplete="off">
+                        </label>
+                        <label class="service-quote__field">
+                            <span>Количество и параметры</span>
+                            <input name="rail_3" type="text" placeholder="Количество контейнеров/мест, тип контейнера, вес и объём" autocomplete="off">
+                        </label>
+                        <label class="service-quote__field">
+                            <span>Что перевозим</span>
+                            <input name="rail_4" type="text" placeholder="Наименование, упаковка, количество мест" autocomplete="off">
+                        </label>
+                        <label class="service-quote__field">
+                            <span>Дата готовности</span>
+                            <input name="rail_5" type="text" placeholder="Ориентировочные сроки или желаемая дата" autocomplete="off">
+                        </label>
+                        <label class="service-quote__field">
+                            <span>Дополнительные условия</span>
+                            <input name="rail_6" type="text" placeholder="Требования к погрузке, терминалам или перегрузке" autocomplete="off">
+                        </label>
+                        <label class="service-quote__field service-quote__field--wide">
+                            <span>Как с вами связаться</span>
+                            <input name="contact" type="text" placeholder="Телефон или email" required autocomplete="tel">
+                        </label>
+                        <label class="service-quote__field service-quote__field--wide">
+                            <span>Дополнительные сведения (необязательно)</span>
+                            <textarea name="extra" rows="3" placeholder="Особые требования, документы, вопросы"></textarea>
+                        </label>
+                    </div>
+                    <label class="service-quote__consent">
+                        <input type="checkbox" name="consent" required>
+                        <span>Согласен(на) на обработку персональных данных. Политика конфиденциальности</span>
+                    </label>
+                    <button class="button button--primary service-quote__submit" type="submit">Отправить запрос</button>
+                </form>
+            </aside>
         </div>
         <div class="inner-hero__meta">
             <span>АВИА · АВТО · МОРЕ · Ж/Д</span>

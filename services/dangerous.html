@@ -75,7 +75,10 @@
         <a class="button button--primary" href="#request-form">Запросить расчёт</a>
         <a class="dangerous-hero__secondary" href="#requirements">Уточнить возможность перевозки</a>
       </div>
-      <div class="dangerous-hero__meta"><span>АВИА · АВТО · МОРЕ · Ж/Д</span><span>MEGATON EXPORT</span></div>
+      <div class="dangerous-hero__meta">
+        <span>АВИА · АВТО · МОРЕ · Ж/Д</span>
+        <span>MEGATON EXPORT</span>
+      </div>
     </div>
     <aside class="request-card" id="request-form">
       <div class="request-card__heading">
@@ -88,12 +91,25 @@
           <label>Откуда<input type="text" name="origin" placeholder="Город или страна" autocomplete="off"></label>
           <label>Куда<input type="text" name="destination" placeholder="Город или страна" autocomplete="off"></label>
         </div>
-        <label>Что перевозим <span class="required-mark">*</span><textarea name="cargo" rows="3" placeholder="Название и описание груза, упаковка, масса" required></textarea></label>
-        <label>Как с вами связаться <span class="required-mark">*</span><input type="text" name="contact" placeholder="Телефон или email" autocomplete="tel" required></label>
-        <label class="request-form__optional">Дополнительные сведения<textarea name="details" rows="2" placeholder="Класс опасности, номер ООН, дата отправки и другие известные данные"></textarea></label>
-        <label class="request-form__consent"><input type="checkbox" name="consent" required><span>Согласен(на) на обработку персональных данных и принимаю <a href="privacy.html" target="_blank" rel="noopener">Политику конфиденциальности</a>. <span class="required-mark">*</span></span></label>
+        <label>Что перевозим 
+          <span class="required-mark">*</span>
+          <textarea name="cargo" rows="3" placeholder="Название и описание груза, упаковка, масса" required></textarea>
+        </label>
+        <label>Как с вами связаться 
+          <span class="required-mark">*</span>
+          <input type="text" name="contact" placeholder="Телефон или email" autocomplete="tel" required>
+        </label>
+        <label class="request-form__optional">Дополнительные сведения
+          <textarea name="details" rows="2" placeholder="Класс опасности, номер ООН, дата отправки и другие известные данные"></textarea>
+        </label>
+        <label class="request-form__consent">
+          <input type="checkbox" name="consent" required>
+          <span>Согласен(на) на обработку персональных данных и принимаю 
+            <a href="privacy.html" target="_blank" rel="noopener">Политику конфиденциальности</a>. 
+            <span class="required-mark">*</span>
+          </span>
+        </label>
         <button class="button button--primary request-form__submit" type="submit">Отправить запрос</button>
-        <p class="request-form__notice" id="request-form-notice" role="status" aria-live="polite">Форма подготовлена. Отправка заявок будет подключена на следующем этапе.</p>
         <p class="request-form__footnote">* Обязательные поля</p>
       </form>
     </aside>
@@ -108,9 +124,21 @@
       <p>Чем точнее исходные данные, тем предметнее можно обсудить возможные варианты доставки.</p>
     </div>
     <div class="requirements-grid">
-      <article class="requirement-card"><span class="requirement-card__number">01</span><h3>Груз и ограничения</h3><p>Состав, упаковка и масса. Класс опасности и номер ООН — если известны.</p></article>
-      <article class="requirement-card"><span class="requirement-card__number">02</span><h3>Маршрут и сроки</h3><p>Пункт отправления и назначения, желаемая дата отправки и важные условия.</p></article>
-      <article class="requirement-card"><span class="requirement-card__number">03</span><h3>Документы</h3><p>Имеющиеся сведения о грузе и документы поставщика. Если документов пока нет — укажите это.</p></article>
+      <article class="requirement-card">
+        <span class="requirement-card__number">01</span>
+        <h3>Груз и ограничения</h3>
+        <p>Состав, упаковка и масса. Класс опасности и номер ООН — если известны.</p>
+      </article>
+      <article class="requirement-card">
+        <span class="requirement-card__number">02</span>
+        <h3>Маршрут и сроки</h3>
+        <p>Пункт отправления и назначения, желаемая дата отправки и важные условия.</p>
+      </article>
+      <article class="requirement-card">
+        <span class="requirement-card__number">03</span>
+        <h3>Документы</h3>
+        <p>Имеющиеся сведения о грузе и документы поставщика. Если документов пока нет — укажите это.</p>
+      </article>
     </div>
   </div>
 </section>
@@ -122,22 +150,55 @@
       <h2>От запроса к согласованной<br><span>перевозке</span></h2>
     </div>
     <div class="process-grid">
-      <article class="process-step"><span>1</span><div><h3>Расскажите о задаче</h3><p>Груз, маршрут и контакт для связи.</p></div></article>
-      <article class="process-step"><span>2</span><div><h3>Обсудим условия</h3><p>Уточним исходные данные и возможные варианты организации перевозки.</p></div></article>
-      <article class="process-step"><span>3</span><div><h3>Согласуем предложение</h3><p>Обсудим стоимость, сроки и порядок дальнейшей работы.</p></div></article>
+      <article class="process-step">
+        <span>1</span>
+        <div>
+          <h3>Расскажите о задаче</h3>
+          <p>Груз, маршрут и контакт для связи.</p>
+        </div>
+      </article>
+      <article class="process-step">
+        <span>2</span>
+        <div>
+          <h3>Обсудим условия</h3>
+          <p>Уточним исходные данные и возможные варианты организации перевозки.</p>
+        </div>
+      </article>
+      <article class="process-step">
+        <span>3</span>
+        <div>
+          <h3>Согласуем предложение</h3>
+          <p>Обсудим стоимость, сроки и порядок дальнейшей работы.</p>
+        </div>
+      </article>
     </div>
   </div>
 </section>
 
 <section class="case-section">
   <div class="container case-section__inner">
-    <div><p class="eyebrow">03 / ПРАКТИКА</p><h2>Опыт в конкретных<br><span>задачах</span></h2></div>
-    <div class="case-placeholder"><span class="case-placeholder__label">МЕСТО ДЛЯ ПОДТВЕРЖДЁННОГО КЕЙСА</span><p>Маршрут / характеристики груза / решение / результат</p><small>Добавим сюда реальный пример после согласования с операционной командой.</small></div>
+    <div>
+      <p class="eyebrow">03 / ПРАКТИКА</p>
+      <h2>Опыт в конкретных<br>
+        <span>задачах</span>
+      </h2>
+    </div>
+    <div class="case-placeholder">
+      <span class="case-placeholder__label">МЕСТО ДЛЯ ПОДТВЕРЖДЁННОГО КЕЙСА</span>
+      <p>Маршрут / характеристики груза / решение / результат</p>
+      <small>Добавим сюда реальный пример после согласования с операционной командой.</small>
+    </div>
   </div>
 </section>
 
 <section class="dangerous-bottom-cta">
-  <div class="container dangerous-bottom-cta__inner"><div><p class="eyebrow">ME / СВЯЖИТЕСЬ С НАМИ</p><h2>Обсудим вашу перевозку</h2></div><a class="button button--light" href="#request-form">Запросить расчёт</a></div>
+  <div class="container dangerous-bottom-cta__inner">
+    <div>
+      <p class="eyebrow">ME / СВЯЖИТЕСЬ С НАМИ</p>
+      <h2>Обсудим вашу перевозку</h2>
+    </div>
+    <a class="button button--light" href="#request-form">Запросить расчёт</a>
+  </div>
 </section>
 </main>
 
